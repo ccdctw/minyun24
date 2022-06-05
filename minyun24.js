@@ -50,12 +50,12 @@ let start = function()
   }
 }
 
-const songP = 'assets/yay.mp3';
+const songP = 'yay.mp3';
 
 function preload(){
 
-  img = loadImage('assets/hand.png');
-  font = loadFont('assets/Li.ttf');
+  img = loadImage('hand.png');
+  font = loadFont('Li.ttf');
 
   isIphone = window.navigator.userAgent.match(/iPad/i) || window.navigator.userAgent.match(/iphone/i);
 
@@ -209,10 +209,8 @@ function draw() {
       if(textMove>45){
         alpha3=255;
       }
-      //print(textMove);
 
       textSize(28);
-      //textFont('Noto Sans TC');
       textFont(font);
       stroke(textColor);
       strokeWeight(0);
